@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Force HTTPS and WWW
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.almarwatravel\.co\.uk$ [NC]
+RewriteRule ^ https://www.almarwatravel.co.uk%{REQUEST_URI} [L,R=301]
+
+# Remove index.html from URL
+RewriteCond %{THE_REQUEST} \s/+index\.html [NC]
+RewriteRule ^index\.html$ https://www.almarwatravel.co.uk/ [L,R=301]
+
+# Internally load index.html when someone visits /
+DirectoryIndex index.html
+RewriteRule ^$ index.html [L]

@@ -1,0 +1,1311 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description"
+    content="14 Nights 3 Star Hajj from £6,499 - ATOL Protected. Includes flights, hotels, visa & transfers." />
+  <title>14 Nights 3 Star Hajj £6,499 - AlMarwaTravel</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+  <link rel="apple-touch-icon" href="../images/logo.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Critical: Reset Bootstrap's impact on custom navbar */
+    nav * {
+      box-sizing: border-box !important;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    ul.dropdown-menu {
+      margin-bottom: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    /* Package Detail Page Styles */
+    .package-hero-section {
+      background: linear-gradient(135deg, #050f0a 0%, #0a2118 40%, #0F5132 100%);
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .package-hero-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: .06;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D4A017' fill-opacity='1'%3E%3Cpath d='M30 0l5.196 9h-10.392zM30 60l5.196-9h-10.392zM0 30l9-5.196v10.392zM60 30l-9-5.196v10.392z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .package-hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .package-hero-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 30px;
+    }
+
+    .package-hotels {
+      color: rgba(255, 255, 255, .85);
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .package-hotels>div {
+      margin-bottom: 12px;
+    }
+
+    .package-star-rating {
+      display: inline-flex;
+      gap: 4px;
+      margin-left: 15px;
+    }
+
+    .package-star-rating .material-icons {
+      font-size: 18px;
+      color: var(--gold);
+    }
+
+    .package-hero-price {
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(212, 160, 23, .25);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .price-main {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .price-label {
+      color: rgba(255, 255, 255, .6);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .price-amount {
+      font-family: 'Cinzel', serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .price-per {
+      color: rgba(255, 255, 255, .7);
+      font-size: 15px;
+    }
+
+    .price-booking {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, .75);
+      font-size: 14px;
+      background-color: var(--gold);
+      border-radius: 20px;
+      height: max-content;
+      padding: 10px 15px;
+    }
+
+    .price-booking .material-icons {
+      color: var(--green);
+      font-size: 20px;
+    }
+
+    .package-details-main {
+      padding: 60px 0;
+    }
+
+    .details-card {
+      background: var(--white);
+      border: 1px solid var(--gray-light);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+
+    .details-card-title {
+      font-family: 'Cinzel', serif;
+      font-size: 26px;
+      color: var(--green);
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .details-card-title .material-icons {
+      color: var(--gold);
+      font-size: 28px;
+    }
+
+    .package-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    .highlight-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px;
+      background: var(--cream);
+      border-radius: 12px;
+      border-left: 4px solid var(--gold);
+    }
+
+    .highlight-item .material-icons {
+      color: var(--gold);
+      font-size: 32px;
+    }
+
+    .highlight-item strong {
+      display: block;
+      color: var(--dark);
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .highlight-item p {
+      color: var(--gray);
+      font-size: 13px;
+      margin: 0;
+    }
+
+    .package-description {
+      color: var(--gray);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .hotel-showcase {
+      border: 1px solid var(--gray-light);
+      border-radius: 12px;
+      padding: 24px;
+      background: var(--cream);
+    }
+
+    .hotel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 20px;
+    }
+
+    .hotel-name {
+      font-family: 'Cinzel', serif;
+      font-size: 22px;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .hotel-location {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    .hotel-location .material-icons {
+      font-size: 18px;
+      color: var(--gold);
+    }
+
+    .hotel-rating .material-icons {
+      color: var(--gold);
+      font-size: 20px;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--green);
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all .3s;
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 160, 23, .4);
+      color: var(--green);
+    }
+
+    @media (min-width: 768px) {
+      .hotel-gallery>.row>.col-md-6:first-child .hotel-img {
+        height: 320px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hotel-gallery>.row>.col-md-6:last-child .hotel-img {
+        height: 156px;
+      }
+
+    }
+
+    .hotel-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 767px) {
+      .hotel-img {
+        height: 220px;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .inclusion-title {
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
+      color: var(--green);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .inclusion-list,
+    .exclusion-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .inclusion-list li,
+    .exclusion-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background: var(--cream);
+      border-radius: 8px;
+      margin-bottom: 10px;
+      color: var(--dark);
+      font-size: 14px;
+    }
+
+    .inclusion-list .material-icons {
+      color: var(--green);
+      font-size: 20px;
+    }
+
+    .exclusion-list .material-icons {
+      color: #dc3545;
+      font-size: 20px;
+    }
+
+    .additional-info {
+      display: grid;
+      gap: 14px;
+    }
+
+    .info-item {
+      padding: 16px;
+      background: var(--cream);
+      border-radius: 10px;
+      border-left: 4px solid var(--gold);
+      color: var(--gray);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .info-item strong {
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    .booking-sidebar {
+      position: sticky;
+      top: 120px;
+    }
+
+    .booking-card {
+      background: linear-gradient(160deg, var(--green) 0%, var(--green-light) 100%);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 10px 40px rgba(15, 81, 50, .35);
+    }
+
+    .booking-title {
+      font-family: 'Cinzel', serif;
+      font-size: 24px;
+      color: var(--white);
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .booking-form .form-label {
+      color: rgba(255, 255, 255, .9);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .booking-form .form-control {
+      background: rgba(255, 255, 255, .13);
+      border: 2px solid rgba(255, 255, 255, .25);
+      border-radius: 10px;
+      color: var(--white);
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+
+    .booking-form .form-control:focus {
+      background: rgba(255, 255, 255, .2);
+      border-color: var(--gold);
+      color: var(--white);
+      box-shadow: none;
+    }
+
+    .booking-form .form-control::placeholder {
+      color: rgba(255, 255, 255, .45);
+    }
+
+    .booking-form .form-control option {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    .btn-booking-submit {
+      width: 100%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--green);
+      border: none;
+      padding: 14px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all .3s;
+      margin-top: 8px;
+    }
+
+    .btn-booking-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(212, 160, 23, .4);
+      color: var(--green);
+    }
+
+    @media (max-width: 768px) {
+      .package-hero-section {
+        padding: 100px 0 60px;
+      }
+
+      .package-hotels>div {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+      }
+
+      .package-star-rating {
+        margin-left: 0;
+        margin-top: 8px;
+      }
+
+      .hotel-header {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .booking-sidebar {
+        position: static;
+      }
+    }
+
+    /* Fix Bootstrap conflicts with existing navbar */
+    nav#navbar {
+      all: revert;
+      position: fixed !important;
+      background-color: white !important;
+      top: 44px !important;
+      left: 0 !important;
+      right: 0 !important;
+      z-index: 1000 !important;
+      padding: 0 5% !important;
+      transition: all .4s ease !important;
+    }
+
+    nav#navbar.scrolled {
+      background: white !important;
+      backdrop-filter: blur(12px) !important;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, .3) !important;
+      top: 0 !important;
+    }
+
+    .nav-inner {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      height: 70px !important;
+    }
+
+    .nav-links {
+      display: flex !important;
+      align-items: center !important;
+      gap: 32px !important;
+      list-style: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      font-weight: 500;
+    }
+
+    .nav-links li {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .nav-links a {
+      color: rgba(15, 81, 50, .97) !important;
+      text-decoration: none !important;
+      font-size: 14px !important;
+      font-weight: 500 !important;
+      letter-spacing: .5px !important;
+      transition: color .3s !important;
+      position: relative !important;
+    }
+
+    .nav-links a::after {
+      content: '' !important;
+      position: absolute !important;
+      bottom: -4px !important;
+      left: 0 !important;
+      width: 0 !important;
+      height: 2px !important;
+      background: var(--gold) !important;
+      transition: width .3s !important;
+    }
+
+    .dropdown-toggle::after {
+      border: 0px;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold) !important;
+    }
+
+    .nav-links a:hover::after {
+      width: 100% !important;
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light)) !important;
+      color: var(--green) !important;
+      padding: 10px 22px !important;
+      border-radius: 25px !important;
+      font-weight: 700 !important;
+      letter-spacing: .5px !important;
+      transition: all .3s !important;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px) !important;
+      box-shadow: 0 6px 20px rgba(212, 160, 23, .5) !important;
+      color: var(--green) !important;
+    }
+
+    .nav-cta::after {
+      display: none !important;
+    }
+
+    .dropdown-toggle {
+      cursor: pointer !important;
+    }
+
+    .dropdown-toggle i {
+      margin-left: 4px !important;
+      font-size: 10px !important;
+    }
+
+    .hamburger {
+      display: none !important;
+      flex-direction: column !important;
+      gap: 5px !important;
+      cursor: pointer !important;
+      background: none !important;
+      border: none !important;
+      padding: 5px !important;
+    }
+
+    .hamburger span {
+      width: 24px !important;
+      height: 2px !important;
+      background: black !important;
+      border-radius: 2px !important;
+      transition: all .3s !important;
+    }
+
+    /* Dropdown Menu Styles */
+    .dropdown {
+      position: relative !important;
+    }
+
+    .dropdown-menu {
+      display: block !important;
+      /* Override Bootstrap's display:none */
+      position: absolute !important;
+      top: 100% !important;
+      left: 0 !important;
+      background: rgba(15, 81, 50, .98) !important;
+      backdrop-filter: blur(12px) !important;
+      min-width: 230px !important;
+      border-radius: 12px !important;
+      padding: 10px 0 !important;
+      margin-top: 6px !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+      transform: translateY(-8px) !important;
+      transition: all .25s ease !important;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, .3) !important;
+      z-index: 1000 !important;
+      border: 1px solid rgba(212, 160, 23, .15) !important;
+      list-style: none !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      pointer-events: none !important;
+      /* Prevent interaction when hidden */
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .dropdown.active .dropdown-menu,
+    .dropdown.show .dropdown-menu {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: translateY(0) !important;
+      pointer-events: auto !important;
+      /* Allow interaction when visible */
+    }
+
+    .dropdown-menu li {
+      list-style: none !important;
+      color: white !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .dropdown-menu a {
+      display: flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+      padding: 11px 20px !important;
+      color: rgba(255, 255, 255, .85) !important;
+      text-decoration: none !important;
+      font-size: 13.5px !important;
+      transition: all .25s !important;
+    }
+
+    .dropdown-menu a:hover {
+      background: rgba(212, 160, 23, .12) !important;
+      color: var(--gold) !important;
+      padding-left: 26px !important;
+    }
+
+    .dropdown-menu a::after {
+      display: none !important;
+    }
+
+    .dropdown-menu a i {
+      color: var(--gold) !important;
+      font-size: 12px !important;
+      width: 16px !important;
+      flex-shrink: 0 !important;
+    }
+
+    @media(max-width:900px) {
+      .nav-links {
+        display: none !important;
+        position: fixed !important;
+        top: 70px !important;
+        left: 0 !important;
+        right: 0 !important;
+        background: white !important;
+        flex-direction: column !important;
+        padding: 30px !important;
+        gap: 20px !important;
+        text-align: center !important;
+        max-height: calc(100vh - 114px) !important;
+        overflow-y: auto !important;
+      }
+
+      .nav-links.open {
+        display: flex !important;
+      }
+
+      .hamburger {
+        display: flex !important;
+      }
+
+      .dropdown-menu {
+        position: static !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transform: none !important;
+        background: rgba(15, 81, 50, .95) !important;
+        margin: 6px 0 0 0 !important;
+        max-height: 0 !important;
+        overflow: hidden !important;
+        transition: max-height .3s ease, opacity .3s ease, visibility .3s ease !important;
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 8px !important;
+        padding: 0 !important;
+      }
+
+      .dropdown.active .dropdown-menu {
+        max-height: 500px !important;
+        padding: 10px 0 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+
+      .dropdown-menu a {
+        color: rgba(255, 255, 255, .95) !important;
+        font-size: 14px !important;
+        padding: 12px 20px !important;
+        display: flex !important;
+      }
+    }
+
+    /* Adjust hero section to account for navbar */
+    .package-hero-section {
+      margin-top: 50px;
+    }
+
+    @media(max-width:480px) {
+      nav#navbar {
+        top: 0 !important;
+      }
+
+      .details-card {
+        padding: 20px 10px;
+      }
+
+      .package-hero-section {
+        margin-top: 0px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .package-hero-price {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <a href="tel:+442037738666"><i class="fas fa-phone"></i> 020 3773 8666</a>
+      <div class="top-bar-divider"></div>
+      <a href="mailto:info@almarwatravel.co.uk" class="tb-email"><i class="fas fa-envelope"></i>
+        info@almarwatravel.co.uk</a>
+
+    </div>
+    <div class="top-bar-right">
+      <a href="https://wa.me/442037738666" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/almarwa-logo-new.png" alt="AlMarwaTravel Logo" style="width: 280px;" />
+        
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Hajj Packages <i class="fas fa-chevron-down"
+              style="font-size:10px;margin-left:4px;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="../Hajj-packages.html"><i class="fas fa-star"></i> Hajj Packages</a></li>
+            <li><a href="../Hajj-packages-2026.html"><i class="fas fa-calendar"></i> Hajj 2026</a></li>
+            <li><a href="../ramadan-Hajj-packages.html"><i class="fas fa-moon"></i> Ramadan Hajj</a></li>
+            <li><a href="../easter-Hajj-packages.html"><i class="fas fa-egg"></i> Easter Hajj</a></li>
+            <li><a href="../december-Hajj-packages.html"><i class="fas fa-snowflake"></i> December Hajj</a></li>
+            <li><a href="../Hajj-packages-birmingham.html"><i class="fas fa-snowflake"></i> Birmingham Hajj</a></li>
+
+          </ul>
+        </li>
+        <li><a href="../hajj-packages.html">Hajj Packages</a></li>
+        <li><a href="../hajj-and-umrah-visa-uk.html">Visa</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../enquire.html" class="nav-cta"><i class="fas fa-paper-plane"></i> Beat My Quote</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Package Hero Section -->
+  <section class="package-hero-section">
+    <div class="container-fluid px-lg-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="package-hero-content">
+            <h1 class="package-hero-title">14 Nights 3 Star Hajj Package</h1>
+            <div class="package-hero-meta d-block">
+              <div class="package-hotels d-block">
+                <div class="d-flex align-items-center flex-md-row flex-column">
+                  <div>
+                    <span style="font-size: 22px; margin-right: 10px;">🕋</span>
+                    <span>4-Star Hotel in Makkah (11 nights)</span>
+                  </div>
+                  <div class="package-star-rating">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons text-secondary">star</span>
+                    <span class="material-icons text-secondary">star</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center flex-md-row flex-column">
+                  <div>
+                    <span style="font-size: 22px; margin-right: 10px;">🕌</span>
+                    <span>4-Star Hotel in Madinah (10 nights)</span>
+                  </div>
+                  <div class="package-star-rating">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons text-secondary">star</span>
+                    <span class="material-icons text-secondary">star</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="package-hero-price">
+              <div class="price-main">
+                <span class="price-label">From</span>
+                <span class="price-amount">£6,499</span>
+                <span class="price-per">per person</span>
+              </div>
+              <div class="price-booking">
+                <span class="material-icons">payments</span>
+                <span>Book with just <strong>£200</strong> deposit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="package-details-main">
+    <div class="container-fluid px-lg-5">
+      <div class="row g-4">
+        <!-- Left Column - Details -->
+        <div class="col-lg-8">
+          <!-- Package Overview -->
+          <div class="details-card">
+            <h2 class="details-card-title">
+              <span class="material-icons">info</span>Package Overview
+            </h2>
+            <div class="package-highlights">
+              <div class="highlight-item">
+                <span class="material-icons">schedule</span>
+                <div>
+                  <strong>21 Days</strong>
+                  <p>Duration</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="material-icons">description</span>
+                <div>
+                  <strong>Visa Included</strong>
+                  <p>Hajj Visa</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="material-icons">flight</span>
+                <div>
+                  <strong>Return Flights</strong>
+                  <p>From UK</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="material-icons">directions_car</span>
+                <div>
+                  <strong>Transfers</strong>
+                  <p>Airport & Hotels</p>
+                </div>
+              </div>
+            </div>
+            <p class="package-description">
+              Experience a blessed Hajj journey with AlMarwaTravel. This carefully curated package
+              includes comfortable accommodation near the Holy Mosques, return flights, visa processing,
+              and ground transportation. Our expert team ensures a hassle-free pilgrimage, allowing you to
+              focus on your spiritual journey.
+            </p>
+          </div>
+
+          <!-- Hotels Section -->
+          <div class="details-card">
+            <h2 class="details-card-title">
+              <span class="material-icons">hotel</span>Accommodation
+            </h2>
+            <!-- Mecca Hotel -->
+            <div class="hotel-showcase">
+              <div class="hotel-header">
+                <div>
+                  <h3 class="hotel-name">Al Kiswah Tower</h3>
+                  <p class="hotel-location">
+                    <span class="material-icons">location_on</span>
+                    4 Star Hotel in Makkah
+                  </p>
+                </div>
+                <div class="d-flex flex-column align-items-sm-end justify-content-between gap-2">
+                  <div class="hotel-rating mb-4" style="width: max-content !important;">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                  </div>
+                  <button class="btn btn-gold view-gallery-btn" style="padding: 10px 25px; font-size: 0.9rem;">
+                    View Hotel images
+                  </button>
+                </div>
+              </div>
+              <div class="hotel-gallery" style="display: none;">
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <img src="../images/Al-Kiswah-Tower-1.webp" alt="Hotel Exterior" class="hotel-img">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row g-2">
+                      <div class="col-6">
+                        <img src="../images/Al-Kiswah-Tower-2.webp" alt="Hotel Room" class="hotel-img">
+                      </div>
+                      <div class="col-6">
+                        <img src="../images/Al-Kiswah-Tower-3.webp" alt="Hotel Lobby" class="hotel-img">
+                      </div>
+                      <div class="col-12">
+                        <img src="../images/Al-Kiswah-Tower-4.webp" alt="Hotel Bathroom" class="hotel-img">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Madinah Hotel -->
+            <div class="hotel-showcase mt-4">
+              <div class="hotel-header">
+                <div>
+                  <h3 class="hotel-name">Al Aqeeq Hotel</h3>
+                  <p class="hotel-location">
+                    <span class="material-icons">location_on</span>
+                    3 Star Premium Hotel in Madinah
+                  </p>
+                </div>
+                <div class="d-flex flex-column align-items-sm-end justify-content-between gap-2">
+                  <div class="hotel-rating mb-4" style="width: max-content !important;">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                  </div>
+                  <button class="btn btn-gold view-gallery-btn" style="padding: 10px 25px; font-size: 0.9rem;">
+                    View Hotel images
+                  </button>
+                </div>
+              </div>
+              <div class="hotel-gallery" style="display: none;">
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <img src="../images/dam-3star-1.webp" alt="Hotel Exterior" class="hotel-img">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row g-2">
+                      <div class="col-6">
+                        <img src="../images/dam-3star-2.webp" alt="Hotel Room" class="hotel-img">
+                      </div>
+                      <div class="col-6">
+                        <img src="../images/dam-3star-3.webp" alt="Hotel Lobby" class="hotel-img">
+                      </div>
+                      <div class="col-12">
+                        <img src="../images/dam-3star-4.webp" alt="Hotel Facilities" class="hotel-img">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inclusions & Exclusions -->
+          <div class="details-card">
+            <h2 class="details-card-title">
+              <span class="material-icons">checklist</span>What's Included & Excluded
+            </h2>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <h4 class="inclusion-title">
+                  <span class="material-icons text-success">check_circle</span>Included
+                </h4>
+                <ul class="inclusion-list">
+                  <li><span class="material-icons">done</span> Return flights from UK</li>
+                  <li><span class="material-icons">done</span> Hajj visa processing</li>
+                  <li><span class="material-icons">done</span> Hotel accommodation</li>
+                  <li><span class="material-icons">done</span> Airport transfers</li>
+                  <li><span class="material-icons">done</span> Makkah to Madinah transport</li>
+                  <li><span class="material-icons">done</span> Free Ziyarah tours</li>
+                  <li><span class="material-icons">done</span> 24/7 support</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h4 class="inclusion-title">
+                  <span class="material-icons text-danger">cancel</span>Not Included
+                </h4>
+                <ul class="exclusion-list">
+                  <li><span class="material-icons">close</span> Travel insurance</li>
+                  <li><span class="material-icons">close</span> Personal expenses</li>
+                  <li><span class="material-icons">close</span> Meals (unless specified)</li>
+                  <li><span class="material-icons">close</span> Excess baggage fees</li>
+                  <li><span class="material-icons">close</span> Optional tours</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Info -->
+          <div class="details-card">
+            <h2 class="details-card-title">
+              <span class="material-icons">info</span>Additional Information
+            </h2>
+            <div class="additional-info">
+              <div class="info-item">
+                <strong>Direct flights:</strong> Can be arranged on request from major UK airports
+              </div>
+              <div class="info-item">
+                <strong>Ziyarah tours:</strong> Available in Makkah and Madinah to holy places and historical Islamic
+                sites
+              </div>
+              <div class="info-item">
+                <strong>Additional Islamic tours:</strong> Available at extra cost to enhance your spiritual experience
+              </div>
+              <div class="info-item">
+                <strong>Payment:</strong> Book with £200 deposit, pay balance in easy monthly installments
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col-lg-4">
+          <div class="booking-sidebar">
+            <div class="booking-card">
+              <h3 class="booking-title">Let's Plan Your Hajj</h3>
+              <form class="booking-form" action="../enquire.html">
+                <div class="mb-3">
+                  <label class="form-label">Departure Date</label>
+                  <input type="date" class="form-control" name="departure" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Departure Airport</label>
+                  <select class="form-control" name="departure_airport" required>
+                    <option value="">Departure Airport</option>
+                    <option value="London Heathrow">London Heathrow</option>
+                    <option value="London Gatwick">London Gatwick</option>
+                    <option value="Manchester">Manchester</option>
+                    <option value="London Stansted">London Stansted</option>
+                    <option value="London Luton">London Luton</option>
+                    <option value="Edinburgh">Edinburgh</option>
+                    <option value="Birmingham">Birmingham</option>
+                    <option value="Glasgow">Glasgow</option>
+                    <option value="Bristol">Bristol</option>
+                    <option value="Liverpool">Liverpool</option>
+                    <option value="Newcastle">Newcastle</option>
+                    <option value="East Midlands">East Midlands</option>
+                    <option value="Aberdeen">Aberdeen</option>
+                    <option value="London City">London City</option>
+                    <option value="Leeds Bradford">Leeds Bradford</option>
+                    <option value="Cardiff">Cardiff</option>
+                    <option value="Norwich">Norwich</option>
+                    <option value="Humberside">Humberside</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Number of Travelers</label>
+                  <select class="form-control" name="travelers" required>
+                    <option value="">No. of Travelers</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="14+">14+</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Duration</label>
+                  <select class="form-control" name="duration" required>
+
+                    <option value="">Duration</option>
+                    <option value="1 Night">1 Night</option>
+                    <option value="2 Nights">2 Nights</option>
+                    <option value="3 Nights">3 Nights</option>
+                    <option value="4 Nights">4 Nights</option>
+                    <option value="5 Nights">5 Nights</option>
+                    <option value="6 Nights">6 Nights</option>
+                    <option value="21 Days">21 Days</option>
+                    <option value="8 Nights">8 Nights</option>
+                    <option value="9 Nights">9 Nights</option>
+                    <option value="10 Nights">10 Nights</option>
+                    <option value="11 Nights">11 Nights</option>
+                    <option value="12 Nights">12 Nights</option>
+                    <option value="13 Nights">13 Nights</option>
+                    <option value="14 Nights">14 Nights</option>
+                    <option value="14+ Nights">14+ Nights</option>
+                  </select>
+
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Hotel Category</label>
+                  <select class="form-control" name="hotel_category" required>
+                    <option value="">Hotel Category</option>
+                    <option value="3 Star">3 Star</option>
+                    <option value="4 Star">4 Star</option>
+                    <option value="5 Star">5 Star</option>
+                  </select>
+
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Your Name</label>
+                  <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" class="form-control" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" name="phone" placeholder="+44 123 456 7890" required>
+                </div>
+
+                <button type="submit" class="btn btn-booking-submit">
+                  <span class="material-icons">send</span>Get Best Price
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <img src="../images/almarwa-logo-new.png" alt="AlMarwaTravel Logo" style="height: 45px; width: 280px;" />
+          
+        </a>
+        <p>Premium Umrah & Hajj packages designed for comfort, peace, and spiritual fulfilment. Trusted by thousands of
+          pilgrims since 2012.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="../about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+          <li><a href="../blog.html"><i class="fas fa-chevron-right"></i> Blogs</a></li>
+          <li><a href="../contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Packages</h4>
+        <ul class="footer-links">
+          <li><a href="../umrah-packages.html"><i class="fas fa-chevron-right"></i> Umrah Packages</a></li>
+          <li><a href="../hajj-packages.html"><i class="fas fa-chevron-right"></i> Hajj Packages</a></li>
+          <li><a href="../ramadan-umrah-packages.html"><i class="fas fa-chevron-right"></i> Ramadan Umrah</a></li>
+          <li><a href="../december-umrah-packages.html"><i class="fas fa-chevron-right"></i> December Umrah</a></li>
+          <li><a href="../easter-umrah-packages.html"><i class="fas fa-chevron-right"></i> Easter Umrah</a></li>
+          <li><a href="../umrah-packages-birmingham.html"><i class="fas fa-chevron-right"></i> Birmingham Umrah</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Terms</h4>
+        <ul class="footer-links">
+          <li><a href="../terms.html"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+          <li><a href="../privacy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+          <li><a href="../payment-security.html"><i class="fas fa-chevron-right"></i> Payment Security</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-location-dot"></i></div>
+            <div class="contact-item-text"><strong>Our Office</strong><span>13 Station Rd, London SE25 5AH</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-item-text"><strong>Phone</strong><span>020 3773 8666</span></div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-text"><strong>Email</strong><span>info@almarwatravel.co.uk</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="https://wa.me/442037738666" class="wa-float" title="Chat on WhatsApp" aria-label="Chat on WhatsApp"><i
+      class="fab fa-whatsapp"></i></a>
+
+  <script src="../js/script.js"></script>
+  <script>
+    // CRITICAL: Disable Bootstrap's dropdown completely for this page
+    (function () {
+      // Remove all Bootstrap dropdown data attributes to prevent Bootstrap from hijacking
+      document.querySelectorAll('[data-bs-toggle="dropdown"]').forEach(el => {
+        el.removeAttribute('data-bs-toggle');
+      });
+
+      // Force remove Bootstrap's event listeners by reloading dropdown elements
+      document.querySelectorAll('.dropdown').forEach(dropdown => {
+        const clone = dropdown.cloneNode(true);
+        dropdown.parentNode.replaceChild(clone, dropdown);
+      });
+    })();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Re-initialize custom dropdown after Bootstrap loads (to override it)
+    document.addEventListener('DOMContentLoaded', function () {
+      // Remove Bootstrap's initialization
+      document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+        toggle.removeAttribute('data-bs-toggle');
+        toggle.removeAttribute('aria-expanded');
+      });
+
+      // Custom dropdown functionality
+      document.querySelectorAll('.dropdown').forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        const menu = dropdown.querySelector('.dropdown-menu');
+
+        if (!toggle || !menu) return;
+
+        // Desktop hover
+        dropdown.addEventListener('mouseenter', function () {
+          if (window.innerWidth > 900) {
+            dropdown.classList.add('active');
+          }
+        });
+
+        dropdown.addEventListener('mouseleave', function () {
+          if (window.innerWidth > 900) {
+            dropdown.classList.remove('active');
+          }
+        });
+
+        // Mobile/Desktop click
+        toggle.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          // Close other dropdowns
+          document.querySelectorAll('.dropdown').forEach(d => {
+            if (d !== dropdown) d.classList.remove('active');
+          });
+
+          dropdown.classList.toggle('active');
+        });
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.dropdown')) {
+          document.querySelectorAll('.dropdown').forEach(d => {
+            d.classList.remove('active');
+          });
+        }
+      });
+    });
+
+    // Hotel Gallery Toggle
+    document.querySelectorAll('.view-gallery-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const gallery = this.closest('.hotel-showcase').querySelector('.hotel-gallery');
+        if (gallery.style.display === 'none') {
+          gallery.style.display = 'block';
+          this.textContent = 'Hide Hotel images';
+        } else {
+          gallery.style.display = 'none';
+          this.textContent = 'View Hotel images';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Admin & System Directories
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Prevent crawling of search and parameter URLs
+Disallow: /*?s=
+Disallow: /*?search=
+Disallow: /*?replytocom=
+Disallow: /*?utm_
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+
+# Cloudflare
+Allow: /cdn-cgi/image/
+Disallow: /cdn-cgi/
+
+# Sitemap
+Sitemap: https://www.almarwatravel.co.uk/sitemap.xml
+
+# Preferred Host
+Host: www.almarwatravel.co.uk
